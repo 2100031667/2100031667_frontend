@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  display: flex; /* Center the entire body content horizontally */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set minimum height for full viewport coverage */
+  background-color: #f0f0f0; /* Add a light gray background */
+}
+
+.form-container { /* Move the form container to the top */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* Center the form container horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff; /* Add white background for the form container */
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.form-field label {
+  width: 120px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.5rem; /* Adjust margin for spacing between buttons */
+}
+
+button:hover {
+  background-color: #45A049;
+}
+
+#field-options {
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal layout */
+  justify-content: space-between; /* Align buttons at opposite ends */
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 { /* Style the heading */
+  text-align: center; /* Center the heading text */
+  position: fixed; /* Fix the heading at the top */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Span the entire width */
+  padding: 1rem;
+  background-color: #fff; /* Add a white background for the heading */
+  z-index: 1; /* Ensure the heading stays above the form container */
+}

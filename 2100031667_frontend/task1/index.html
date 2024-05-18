@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Dynamic Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Form Builder</h1>
+    <div id="form-container"></div>
+    <div id="field-options">
+        <h2>Field Options</h2>
+        <select id="field-type">
+            <option value="text">Text Input</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="radio">Radio Button</option>
+        </select>
+        <label for="field-label">Label:</label>
+        <input type="text" id="field-label" placeholder="Enter Label">
+        <div id="radio-options" class="hidden">
+            <label for="radio-value">Radio Value:</label>
+            <input type="text" id="radio-value" placeholder="Enter Value">
+        </div>
+        <button id="add-field">Add Field</button>
+    </div>
+    <button id="remove-field">Remove Field</button>
+    <script src="script.js"></script>
+</body>
+</html>
